@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <!-- 카카오 JavaScript SDK 추가 (integrity 속성 제거) -->
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js"></script>
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ins">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>ins</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!-- 카카오 초기화 스크립트 -->
+<script>
+  window.onload = function() {
+    Kakao.init('d6ae5e44f126fae63ab66a6445b7914e');
+    console.log('Kakao initialized:', Kakao.isInitialized());
+  }
+</script>
+
+<!-- Flutter 웹 앱 로드 -->
+<script src="main.dart.js" type="application/javascript"></script>
+
+</body>
+</html>
